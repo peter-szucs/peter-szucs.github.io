@@ -1,0 +1,53 @@
+{box-sizing: border-box;}
+.header {
+    background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url("headerimage.jpg");
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+}
+.leftmargin {
+    background-color: #f5f7d7;
+    height: 80vh;
+    width: 20%;
+    float: left;
+}
+.topnavbar {
+    background-color: #3ec1d3;
+    height: 40px;
+    
+}
+.content {
+    height: 80vh;
+    width: 60%;
+    float: left;
+    text-align: center;
+}
+.rightmargin {
+    background-color: #f6f7d7;
+    height: 80vh;
+    width: 20%;
+    float: right;
+}
+.topnav {
+    background-color: #3ec1d3;
+    overflow: hidden;
+    width: 60%;
+}
+.topnav a {
+    font-size: 24px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    background-color: 3ec1d3;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #ff165d;
+}
