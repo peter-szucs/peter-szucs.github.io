@@ -1,53 +1,96 @@
 {box-sizing: border-box;}
-.header {
-    background: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-    ),
-    url("headerimage.jpg");
-    background-clip: border-box;
+@import url('https://fonts.googleapis.com/css?family=Cute+Font|Open+Sans+Condensed:300&display=swap');
+body {
+    background-image: url(bgspace.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20vh;
+    margin: 0px;
 }
-.leftmargin {
-    background-color: #f5f7d7;
-    height: 80vh;
-    width: 20%;
-    float: left;
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 30px #00adb5, 0 0 15px darkblue;
+    text-align: center;
+    font-size: 48px;
+}
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 26px;
+}
+h1 a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    text-align: 'center';
+    font-size: 40px;
+    display: block;
+    text-decoration: none;
+}
+div.card {
+    width: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+div.card:hover .overlay {
+    opacity: 1;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 2px rgba(255,255,255, 0.5), 0 0 25px #00adb5, 0 0 10px #3c70a4;
+    display: block;
+}
+div.header {
+    background-color: rgba(0,0,0, 0);
+    background-color: rgba(0,0,0, 0.6);
+    color: white;
+    
+    font-size: 40px;
+    margin: auto;
+}
+div.container {
+    padding: 20px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(0,0,0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .topnavbar {
-    background-color: #3ec1d3;
-    height: 40px;
+    background-color: black;
+    height: 49px;
     
 }
-.content {
-    height: 80vh;
-    width: 60%;
-    float: left;
-    text-align: center;
-}
-.rightmargin {
-    background-color: #f6f7d7;
-    height: 80vh;
-    width: 20%;
-    float: right;
-}
 .topnav {
-    background-color: #3ec1d3;
-    overflow: hidden;
-    width: 60%;
+    background-color: black;
 }
 .topnav a {
-    font-size: 24px;
+    font-family: 'Cute Font', cursive;
+    font-size: 20px;
     float: left;
     display: block;
     color: #f2f2f2;
-    background-color: 3ec1d3;
+    background-color: black;
     text-align: center;
     padding: 12px 12px;
     text-decoration: none;
 }
 .topnav a:hover {
-    background-color: #ff165d;
+    background-color: #00adb5;
 }
