@@ -73,8 +73,8 @@ div.container {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .topnavbar {
-    background-color: black;
-    height: 49px;
+    background-color: rgba(0,0,0, 0);
+    height: 66px;
     
 }
 .topnav {
@@ -82,7 +82,7 @@ div.container {
 }
 .topnav a {
     font-family: 'Cute Font', cursive;
-    font-size: 20px;
+    font-size: 32px;
     float: left;
     display: block;
     color: #f2f2f2;
@@ -90,7 +90,32 @@ div.container {
     text-align: center;
     padding: 12px 12px;
     text-decoration: none;
+    transition: 0.5s;
+}
+.topnav a.right {
+    font-family: 'Cute Font', cursive;
+    font-size: 32px;
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    background-color: black;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.topnav a.active {
+    background-color: #393e46;
+}
+.topnav a.activeright {
+    background-color: #393e46;
+    float: right;
 }
 .topnav a:hover {
     background-color: #00adb5;
 }
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+  }
