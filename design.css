@@ -1,5 +1,5 @@
 {box-sizing: border-box;}
-@import url('https://fonts.googleapis.com/css?family=Cute+Font|Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cute+Font|Titillium+Web&display=swap');
 body {
     background-image: url(bgspace.jpg);
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@ body {
     margin: 0px;
 }
 h1 {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 30px #00adb5, 0 0 15px darkblue;
     text-align: center;
